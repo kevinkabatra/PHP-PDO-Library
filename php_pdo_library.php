@@ -9,6 +9,12 @@
 #print_r(PDO::getAvailableDrivers());
 
 /**
+ *  Serves as a lightweight consistent interface for accessing databases using PHP, requires PHP PDO to be
+ * installed on system.
+ * 
+ * This was written to provide a database abstraction layer, as missing features are not emulated within
+ * PHP PDO. This is designed so that all functions will provide a similar service, regardless of database.
+ * Any variations to this design will be listed under Caveats, along with information that I find interesting.
  * 
  * 1) Offers the following non-MySQL Functions:
  *     1.1) Creates connection to an existing database.
